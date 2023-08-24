@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import Video from "./components/Video";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      Hello
+      <div>
+        <Video
+          title="Node JS Tutorial"
+          imageURL="https://www.freecodecamp.org/news/content/images/2021/10/node4.png"
+        ></Video>
+
+        <Video
+          title="Flutter Tutorial"
+          imageURL="https://www.freecodecamp.org/news/content/images/2022/02/flutter37.png"
+        ></Video>
+      </div>
     </div>
   );
 }

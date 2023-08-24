@@ -1,0 +1,11 @@
+.dark{
+    background-color:blue;
+    color: white;
+    margin-top: 5%;
+    margin-bottom: 1%;
+}
+
+.imageDim{
+    width: fit-content;
+    height: 500px;
+}
