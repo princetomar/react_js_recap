@@ -1,22 +1,25 @@
 import "./App.css";
 import Video from "./components/Video";
+import videos from "./data/data";
 
 function App() {
-  let obj = {
-    title: "Node JS Tutorial",
-    imageURL:
-      "https://www.freecodecamp.org/news/content/images/2021/10/node4.png",
-    views: "10 K",
-    time: "1 year ago",
-    channel: "Javascript Mastery",
-    isChannelVerified: false,
-  };
   return (
     <div className="App">
       <div> Videos</div>
       <div>
-        <Video {...obj}></Video>
-
+        {videos.map((video) => (
+          <Video
+            key={video.id}
+            title={video.title}
+            imageURL={video.imageURL}
+            views={video.views}
+            time={video.time}
+            channel={video.channel}
+            isChannelVerified={video.isChannelVerified}
+          ></Video>
+        ))}
+        ;
+        {/* <Video {...videos}></Video>
         <Video
           title="Flutter Tutorial"
           imageURL="https://www.freecodecamp.org/news/content/images/2022/02/flutter37.png"
@@ -25,7 +28,6 @@ function App() {
           channel="CodeFreeCamp.Org"
           isChannelVerified={true}
         ></Video>
-
         <Video
           title="Workout Full Body"
           imageURL="https://i.ytimg.com/vi/fglC-9n0Ofk/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLDX7WpmEHjqObybvVvZln7iUA_j4g"
@@ -33,7 +35,7 @@ function App() {
           time="3 months ago"
           channel="MenWithHonour"
           isChannelVerified={true}
-        ></Video>
+        ></Video> */}
       </div>
     </div>
   );

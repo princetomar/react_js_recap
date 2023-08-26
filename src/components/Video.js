@@ -1,6 +1,7 @@
 import "./Video.css";
 
 function Video({
+  id,
   title,
   imageURL,
   channel = "YouFube",
@@ -30,11 +31,17 @@ function Video({
       ) : (
         <div className="channel">{channel}</div>
       )} */}
-
+      {/* 
       {
         <div className="channel">
           {channel}
           {isChannelVerified ? "✅" : null}
+        </div>
+      } */}
+      {
+        <div className="channel">
+          {channel}
+          {isChannelVerified && "✅"}
         </div>
       }
       <div className="views">
