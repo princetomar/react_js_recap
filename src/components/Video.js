@@ -11,12 +11,12 @@ function Video({
   //   const Topic = "React JS Tuto  rial";
   //   let bg = "dark";
 
-  let channelJSx;
-  if (isChannelVerified) {
-    channelJSx = <div className="channel">{channel} ✅ </div>;
-  } else {
-    <div className="channel">{channel} </div>;
-  }
+  // let channelJSx;
+  // if (isChannelVerified) {
+  //   channelJSx = <div className="channel">{channel} ✅ </div>;
+  // } else {
+  //   <div className="channel">{channel} </div>;
+  // }
   return (
     <div className="container">
       <div className="pic">
@@ -24,7 +24,12 @@ function Video({
       </div>
 
       <div className="title">{title}</div>
-      {channelJSx}
+      {/* {channelJSx} */}
+      {isChannelVerified ? (
+        <div className="channel">{channel} ✅ </div>
+      ) : (
+        <div className="channel">{channel}</div>
+      )}
       <div className="views">
         {views} views
         <span>.</span>
