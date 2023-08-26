@@ -25,11 +25,18 @@ function Video({
 
       <div className="title">{title}</div>
       {/* {channelJSx} */}
-      {isChannelVerified ? (
+      {/* {isChannelVerified ? (
         <div className="channel">{channel} ✅ </div>
       ) : (
         <div className="channel">{channel}</div>
-      )}
+      )} */}
+
+      {
+        <div className="channel">
+          {channel}
+          {isChannelVerified ? "✅" : null}
+        </div>
+      }
       <div className="views">
         {views} views
         <span>.</span>
