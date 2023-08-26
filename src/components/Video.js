@@ -1,8 +1,22 @@
 import "./Video.css";
 
-function Video({ title, imageURL, channel = "YouFube", views, time }) {
+function Video({
+  title,
+  imageURL,
+  channel = "YouFube",
+  views,
+  time,
+  isChannelVerified,
+}) {
   //   const Topic = "React JS Tuto  rial";
   //   let bg = "dark";
+
+  let channelJSx;
+  if (isChannelVerified) {
+    channelJSx = <div className="channel">{channel} ✅ </div>;
+  } else {
+    <div className="channel">{channel} </div>;
+  }
   return (
     <div className="container">
       <div className="pic">
@@ -10,7 +24,7 @@ function Video({ title, imageURL, channel = "YouFube", views, time }) {
       </div>
 
       <div className="title">{title}</div>
-      <div className="channel">{channel}</div>
+      {channelJSx}
       <div className="views">
         {views} views
         <span>.</span>

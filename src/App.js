@@ -9,6 +9,7 @@ function App() {
     views: "10 K",
     time: "1 year ago",
     channel: "Javascript Mastery",
+    isChannelVerified: false,
   };
   return (
     <div className="App">
@@ -22,6 +23,16 @@ function App() {
           views="20 K"
           time="4 months ago"
           channel="CodeFreeCamp.Org"
+          isChannelVerified={true}
+        ></Video>
+
+        <Video
+          title="Workout Full Body"
+          imageURL="https://i.ytimg.com/vi/fglC-9n0Ofk/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLDX7WpmEHjqObybvVvZln7iUA_j4g"
+          views="120 K"
+          time="3 months ago"
+          channel="MenWithHonour"
+          isChannelVerified={true}
         ></Video>
       </div>
     </div>
