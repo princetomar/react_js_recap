@@ -1,9 +1,9 @@
 import React from "react";
 import "./PlayButton.css";
 
-function PlayButton({ message, children, onClick }) {
+function PlayButton({ message, children, onSmash }) {
   function handleClick() {
-    onClick();
+    onSmash();
   }
 
   return (

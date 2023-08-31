@@ -22,13 +22,13 @@ function App() {
         <div style={{ clear: "both" }}>
           <PlayButton
             message="Start video"
-            onClick={() => console.log("Playy Button")}
+            onSmash={() => console.log("Playy Button")}
           >
             Play
           </PlayButton>
           <PlayButton
             message="Paused video"
-            onClick={() => alert("Pause Button")}
+            onSmash={() => alert("Pause Button")}
           >
             Pause
           </PlayButton>
