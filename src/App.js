@@ -27,13 +27,13 @@ function App() {
           >
             Play
           </PlayButton>
-          <PlayButton
+          {/* <PlayButton
             message="Paused video"
             onPlay={() => alert("Pause Button")}
             onPause={() => console.log("Pause button")}
           >
             Pause
-          </PlayButton>
+          </PlayButton> */}
         </div>
       </div>
     </div>
